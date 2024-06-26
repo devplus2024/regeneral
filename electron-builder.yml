@@ -1,0 +1,7 @@
+appId: com.example.nv4-electron-app
+productName: NV4 Desktop App
+directories:
+  output: out
+win:
+  target: nsis
+  icon: build/icon.ico

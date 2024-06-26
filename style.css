@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Panchang-Extralight";
+  src: url("../fonts/Panchang-Extralight.woff2") format("woff2"),
+    url("../fonts/Panchang-Extralight.woff") format("woff"),
+    url("../fonts/Panchang-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang-Light";
+  src: url("../fonts/Panchang-Light.woff2") format("woff2"),
+    url("../fonts/Panchang-Light.woff") format("woff"),
+    url("../fonts/Panchang-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang-Regular";
+  src: url("../fonts/Panchang-Regular.woff2") format("woff2"),
+    url("../fonts/Panchang-Regular.woff") format("woff"),
+    url("../fonts/Panchang-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang-Medium";
+  src: url("../fonts/Panchang-Medium.woff2") format("woff2"),
+    url("../fonts/Panchang-Medium.woff") format("woff"),
+    url("../fonts/Panchang-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang-Semibold";
+  src: url("../fonts/Panchang-Semibold.woff2") format("woff2"),
+    url("../fonts/Panchang-Semibold.woff") format("woff"),
+    url("../fonts/Panchang-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang-Bold";
+  src: url("./src/Font/Panchang-Bold.woff2") format("woff2"),
+    url("./src/Font/Panchang-Bold.woff") format("woff"),
+    url("./src/Font/Panchang-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang-Extrabold";
+  src: url("../fonts/Panchang-Extrabold.woff2") format("woff2"),
+    url("../fonts/Panchang-Extrabold.woff") format("woff"),
+    url("../fonts/Panchang-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panchang-Variable";
+  src: url("../fonts/Panchang-Variable.woff2") format("woff2"),
+    url("../fonts/Panchang-Variable.woff") format("woff"),
+    url("../fonts/Panchang-Variable.ttf") format("truetype");
+  font-weight: 200 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Geist-Regular", sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --themed-border: hsla(0, 0%, 100%, 0.14);
+  --themed-border-grid: hsl(0deg 0% 0% / 14%);
+  --themed-border-author: hsla(0, 72%, 18%, 0.247);
+  --start-color: #00dfd8;
+  --end-color: #007cf0;
+  --themed-border-red: hsla(0, 100%, 50%, 0.63);
+  --themed-border-nav: rgba(255, 255, 0, 0.788);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.a__hover {
+  transition: color 0.5s;
+  transition: all 0.5s;
+}
+#titleBar > #titleName {
+  -webkit-app-region: drag;
+}
+
+#titleBar {
+  -webkit-app-region: drag;
+}
+
+.container_height {
+  height: calc(100vh - 66.19px);
+  scroll-behavior: smooth;
+}
+
+#homeContent {
+  scroll-behavior: smooth;
+}
+
+#icon_home_1 {
+  left: 7rem;
+  transition: all 0.5s;
+}
+
+#hover_button_home_1:hover > #icon_home_1 {
+  left: 7.8rem;
+}
+
+.leBlurIn span {
+  animation-name: leBlurIn inherit;
+}
+.cssanimation,
+.cssanimation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes leBlurIn {
+  from {
+    transform: scaleX(0.2);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+.loading_button {
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  animation: spinner5 700ms linear infinite;
+}
+@keyframes spinner5 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.dark):not(.light) .icon-preview {
+    filter: invert(1);
+  }
+}
+
+.content_hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.content_show {
+  opacity: 100;
+  transition: opacity 0.5s ease-out;
+}
+
+#homeContent::-webkit-scrollbar,
+#featureContent::-webkit-scrollbar,
+#productsContent::-webkit-scrollbar,
+#blogContent::-webkit-scrollbar,
+#resourcesContent::-webkit-scrollbar,
+#loginContent::-webkit-scrollbar,
+#downloadsContent::-webkit-scrollbar {
+  width: 5px;
+}
+#homeContent::-webkit-scrollbar-track,
+#featureContent::-webkit-scrollbar-track,
+#productsContent::-webkit-scrollbar-track,
+#blogContent::-webkit-scrollbar-track,
+#resourcesContent::-webkit-scrollbar-track,
+#loginContent::-webkit-scrollbar-track,
+#downloadsContent::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+#homeContent::-webkit-scrollbar-thumb,
+#featureContent::-webkit-scrollbar-thumb,
+#productsContent::-webkit-scrollbar-thumb,
+#blogContent::-webkit-scrollbar-thumb,
+#resourcesContent::-webkit-scrollbar-thumb,
+#loginContent::-webkit-scrollbar-thumb,
+#downloadsContent::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+}
+
+#anm_logo {
+  animation-duration: 1s;
+  animation: anm_logo infinite;
+}
+@keyframes anm_logo {
+  from {
+    left: -0.7rem;
+  }
+  to {
+    bottom: -9.9rem;
+  }
+}
+
+.grid_line {
+  width: 100%;
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 30px,
+      #eee1 30px 31px
+    ),
+    repeating-linear-gradient(to bottom, transparent 0 30px, #eee1 30px 31px);
+}
+
+.bg_intro_home {
+  background-image: linear-gradient(rgb(0 0 0), rgb(0 73 157));
+  width: 70rem;
+  position: absolute;
+  height: 70rem;
+  border-radius: 9999px;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(190px);
+  z-index: -1;
+}
+
+.button_download_yd_nde_rnmp_xs::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 1.9rem;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #333 0deg,
+    #333 -300deg,
+    #ff0909 140deg,
+    #333 340deg,
+    #333 2turn
+  );
+  opacity: 0;
+  transition: width 0.39s ease-out, opacity 0.25s ease-out,
+    background 0.3s ease-out; /* Áp dụng transition cho width và opacity */
+  z-index: -1; /* Để pseudo-element được chồng dưới nút chính */
+}
+
+.button_download_yd_nde_rnmp_xs:hover::before {
+  width: 100%;
+  transition: width 0.39s ease-out, opacity 0.25s ease-out,
+    background 0.3s ease-out;
+  opacity: 1; /* Đặt opacity về 1 để hiển thị */
+}
+
+.ytp-color-white .ytp-swatch-background-color {
+  background-color: #fff;
+}
+
+.header_transparent_nr4b.header_main_up_nv_r_four {
+  background-color: transparent;
+  transition: box-shadow 0.2s ease 0s, background-color 0.2s ease 0s;
+}
+
+.header_transparent_nr4b.header_nh_child_class {
+  box-shadow: inset 0 -1px rgb(44 43 43);
+  transition: box-shadow 200ms ease 0s, background-color 200ms ease 0s,
+    transform 200ms ease 0s;
+}
+
+.header_transparent_nr4b {
+  background-color: black;
+}
+
+.header_transparent_nr4b.header_nh_child_class.header_show_boder_b {
+  box-shadow: inset 0 -1px rgb(44 43 43);
+  transition: box-shadow 200ms ease 0s, background-color 200ms ease 0s,
+    transform 200ms ease 0s;
+}
+
+.video_thumbnail_frame_player_button {
+  transition: transform 0.25s ease-out, background 0.25s ease-out;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover_video_frame_parent_1:hover > .video_thumbnail_frame_player_button {
+  transition: transform 0.25s ease-out, background 0.25s ease-out;
+  background-color: #000000;
+  border-radius: 9999px;
+  --tw-scale-x: 1.2;
+  --tw-scale-y: 1.2;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/* Thay đổi màu của thanh cuộn */
+.scrollbar-track {
+  background-color: #000000; /* Màu nền của đường dẫn thanh cuộn */
+}
+
+.scrollbar-thumb {
+  background-color: #ffffff; /* Màu của thanh cuộn */
+}
+
+.animate__animated.animate__fadeInUpBig {
+  --animate-delay: 2s;
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="bitmap.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#c7c7c7;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="construct_grid"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nr_x="14"
+       nr_y="17" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:0;fill:#2d0000;stroke:#c7c7c7;stroke-width:5.06942;stroke-opacity:1"
+       id="rect1"
+       width="168.35928"
+       height="107.89222"
+       x="21.934132"
+       y="87.736526"
+       inkscape:path-effect="#path-effect1"
+       sodipodi:type="rect"
+       d="M 190.29342,87.736526 H -2671.8144 M 190.29342,195.62875 H -2671.8144 M 190.29342,303.52097 H -2671.8144 M 190.29342,411.41319 H -2671.8144 M 190.29342,519.3054 H -2671.8144 M 190.29342,627.19762 H -2671.8144 M 190.29342,735.08984 H -2671.8144 M 190.29342,842.98206 H -2671.8144 M 190.29342,950.87428 H -2671.8144 M 190.29342,1058.7665 H -2671.8144 M 190.29342,1166.6587 H -2671.8144 M 190.29342,1274.5509 H -2671.8144 M 190.29342,1382.4432 H -2671.8144 M 190.29342,1490.3354 H -2671.8144 M 190.29342,1598.2276 H -2671.8144 M 190.29342,87.736526 V 1598.2276 M 21.934132,87.736526 V 1598.2276 M -146.42515,87.736526 V 1598.2276 M -314.78444,87.736526 V 1598.2276 M -483.14372,87.736526 V 1598.2276 M -651.503,87.736526 V 1598.2276 M -819.86229,87.736526 V 1598.2276 M -988.22157,87.736526 V 1598.2276 M -1156.5809,87.736526 V 1598.2276 M -1324.9401,87.736526 V 1598.2276 M -1493.2994,87.736526 V 1598.2276 M -1661.6587,87.736526 V 1598.2276 M -1830.018,87.736526 V 1598.2276 M -1998.3773,87.736526 V 1598.2276 M -2166.7366,87.736526 V 1598.2276 M -2335.0958,87.736526 V 1598.2276 M -2503.4551,87.736526 V 1598.2276 M -2671.8144,87.736526 V 1598.2276"
+       transform="matrix(0.06772338,0,0,0.07989767,27.364975,-400.92296)" />
+  </g>
+</svg>

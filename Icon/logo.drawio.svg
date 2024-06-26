@@ -1,0 +1,14 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1096px" height="551px" viewBox="-0.5 -0.5 1096 551" content="&lt;mxfile&gt;&lt;diagram id=&quot;1-SDTc8gqiP7k82FkSly&quot; name=&quot;Page-1&quot;&gt;zZZNU4MwEIZ/DUedAKXi1fp18WIPnlNYIWNgmbiV1l/vAksLVqceFJsDk7zvhmSf7BC8cFFs7pyu8gdMwXqBSjdeeO0FQezH/GyEbSec+fFs3kmZM2kn+nthad5BRCXq2qTwOgokREumGosJliUkNNK0c1iPw57RjletdAYHwjLR9lB9Minlos6V2hv3YLK8XzronZVOXjKH61IWLLGEzil0/x4Jfc11ivVACm+8cOEQqesVmwXYBmyPrJt3+42727ODkn4yYSb7eNN2LXnLxmjbg2gzgWaCOo+88KrODcGy0knj13z6rOVUWB753N2lpHhg9QrsFboU3AItOpZbGhxGDl+gF70gVG1j59lY+yn4MC3J9A0cwWYgSZp3gAWQ23JI70ZRN0UKMohjyb0enK66lKh8cLJRJJFaSirbvX2PljtC92vS89lx0oyuarqcKBltH7msdZk17jHoKyTCQqA72fo3MA/I37ZtQsx99Q8hB7/BODoVxg5Jk8GSlbNLNTX0cOZPCP3iBKFPwJy/WP9Y6fEJQuc7fnrsf1nrPNxfxa03+NkJbz4A&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="1095" height="550" fill="none" stroke="#000000" pointer-events="all"/>
+        <rect x="0" y="0" width="20" height="20" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 0 0 L 20 0 M 20 20 M 0 20 L 0 0" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="530" width="20" height="20" fill="none" stroke="none" transform="rotate(-90,10,540)" pointer-events="all"/>
+        <path d="M 0 530 L 20 530 M 20 550 M 0 550 L 0 530" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(-90,10,540)" pointer-events="all"/>
+        <rect x="1075" y="0" width="20" height="20" fill="none" stroke="none" transform="rotate(90,1085,10)" pointer-events="all"/>
+        <path d="M 1075 0 L 1095 0 M 1095 20 M 1075 20 L 1075 0" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(90,1085,10)" pointer-events="all"/>
+        <rect x="1075" y="530" width="20" height="20" fill="none" stroke="none" transform="rotate(-180,1085,540)" pointer-events="all"/>
+        <path d="M 1075 530 L 1095 530 M 1095 550 M 1075 550 L 1075 530" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-miterlimit="10" transform="rotate(-180,1085,540)" pointer-events="all"/>
+    </g>
+</svg>

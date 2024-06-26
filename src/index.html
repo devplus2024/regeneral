@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" class="dark:[color-scheme:dark]">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			NV4 Website
+		</title>
+		<meta property="og:title" content="NV4 Limited">
+		<meta property="og:description" content="A website Learning Programming">
+		<meta property="og:image"
+			content="https://developplus2024.github.io/NV4Limited/src/Image/banner.jpg">
+		<meta property="og:url"
+			content="https://developplus2024.github.io/NV4Limited/">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="NV4 Limited">
+		<meta name="twitter:description"
+			content="A website Learning Programming By Leader">
+		<meta name="twitter:image"
+			content="https://developplus2024.github.io/NV4Limited/src/Image/banner.jpg">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="./node_modules/apexcharts/dist/apexcharts.css">
+		<!-- <link rel="stylesheet" href="./src/output.css" /> -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+			rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+			rel="stylesheet">
+		<script
+			src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Comfortaa:wght@300..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Comfortaa:wght@300..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" type='text/css'
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Comfortaa:wght@300..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet">
+		<!-- <script src="./preload.js"></script> -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/microsoft-translator@3/dist/microsoft-translator.min.js"></script>
+	</head>
+	<body
+		class="h-screen relative bg-[#09090b99] no-scroll dark:[color-scheme:dark]"
+		style="overflow-y:hidden;">
+		<div class="h-screen flex justify-center items-center" id="loading_bt">
+			<button class="loading_button"></button>
+		</div>
+		<div class="content_hidden" id="content_web">
+			<div class="flex sticky top-0 flex-col w-full"
+				style="z-index: 5;">
+				<div class="sticky w-full" id="titleBar"
+					style="background-color: #0C0C0D;">
+					<div id="titleName"
+						class="text-white h-[2rem] w-full pl-2 flex items-center">
+						<p style="font-family: Geist-Medium,sans-serif;">
+						</p>
+					</div>
+				</div>
+				<div class="sticky w-full top-[2rem] py-3 px-2 "
+					style="border-bottom: 1px solid #202020;border-top: 1px solid #202020;">
+					<div
+						class="text-white text-sm flex flex-warp justify-between items-center gap-[4rem]">
+						<div>
+							<input type="radio" name="tab"
+								onclick="showContent('homeContent')">
+
+							<label for="home"
+								class="a__hover  relative hover:text-white select-none">
+								<p class="text-xl"
+									style="letter-spacing: 0.6rem;font-family: Panchang-Bold, sans-serif;">
+									NV4
+								</p>
+							</label>
+						</div>
+						<div class="flex gap-[1.5rem] font-medium text-[rgb(172, 172, 172)]"
+							style="color:rgb(172, 172, 172);">
+							<div>
+								<input type="radio" id="home" name="tab"
+									onclick="showContent('homeContent')" checked>
+
+								<label for="home"
+									class="a__hover font-medium relative hover:text-white select-none">
+									Home
+								</label>
+							</div>
+							<div>
+								<input type="radio" id="product" name="tab"
+									onclick="showContent('productContent')">
+
+								<label for="product"
+									class="a__hover relative hover:text-white select-none">
+									Product
+								</label>
+							</div>
+							<div>
+								<input type="radio" id="feature" name="tab"
+									onclick="showContent('featureContent')">
+
+								<label for="feature"
+									class="a__hover relative hover:text-white select-none">
+									Feature
+								</label>
+							</div>
+							<div>
+								<input type="radio" id="blog" name="tab"
+									onclick="showContent('blogContent')">
+
+								<label for="blog"
+									class="a__hover relative hover:text-white select-none">
+									Blog
+								</label>
+							</div>
+							<div>
+								<input type="radio" id="resources" name="tab"
+									onclick="showContent('resourcesContent')">
+
+								<label for="resources"
+									class="a__hover relative hover:text-white select-none">
+									Resources
+								</label>
+							</div>
+
+						</div>
+						<div class="flex items-center gap-[1rem]">
+							<button
+								class="bg-white py-1 px-4 rounded-lg hover:bg-[#f1f1f1] cursor-pointer select-none transition-all duration-300">
+								<input type="radio" id="login" name="tab"
+									onclick="showContent('loginContent')">
+								<label for="login">
+									<div
+										class="a__hover text-black  relative rounded-md text-md   px-4  light:text-black dark:text-black  ">
+										Login
+									</div>
+								</label>
+
+							</button>
+							<button class="py-1  rounded-lg"
+								style="border:0.5px solid #ffffff24;">
+								<input type="radio" id="login" name="tab"
+									onclick="showContent('loginContent')">
+								<label for="login">
+									<div
+										class="a__hover  text-white  relative rounded-md text-md   px-[3rem]    cursor-pointer select-none transition-all duration-300">
+										<i class="ti ti-download"></i>
+									</div>
+								</label>
+
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div id="homeContent" class="content active" style="overflow-y:auto;">
+					<div class="container_height">
+						<div
+							class="flex gap-[4rem] flex-col  justify-center items-center container_height">
+							<div class="text-xl w-[369.38px] h-[28px]"
+								style="font-family: Geist-Medium,sans-serif;">
+								<div
+									class="leBlurIn  sequence hidden"
+									id="animation_text">
+									NV4 Limited Version 1.0.2 is Published.
+								</div>
+							</div>
+							<div class="flex flex-col  gap-[1rem] items-center">
+								<div class>
+									<h1
+										class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+										style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+										Learn Programming, Unlock Your Potential
+									</h1>
+								</div>
+								<p
+									class="text-center xl:text-xl sm:text-xl max-[468px]:text-[10px] xl:w-[50rem] max-[468px]:w-[20rem]"
+									style="color:#ffffff">Dive into the world of programming with our
+									comprehensive courses and resources. Unleash your creativity and
+									transform your ideas into reality.
+								</p>
+							</div>
+							<div class="flex  gap-[4rem]">
+								<div
+									class="flex bg-[#000000] relative py-2 pl-5 pr-[3rem] cursor-pointer gap-3 items-center button_Signup rounded-full"
+									style="box-shadow:0 0 0 0.5px #3a3a3a"
+									onclick="showContent('signupContent')"
+									id="hover_button_home_1">
+									<button
+										class="text-white ">Explore Courses
+									</button>
+									<i
+										id="icon_home_1"
+										class="ti ti-arrow-right absolute ">
+									</i>
+								</div>
+								<button
+									class="bg-[white]  text-black px-5 py-2 bg-button-light rounded-full">
+									Start Learning
+								</button>
+							</div>
+
+						</div>
+						<div class="mb-[11.125rem] flex flex-col gap-[2rem] items-center">
+							<div class="flex flex-col items-center gap-[2rem]">
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Unlock Your Coding Potential
+								</h1>
+								<p class="mx-[20rem] text-[1.2rem] text-center">
+									Our programming courses are designed to take you from beginner to
+									expert, with hands-on projects and industry-relevant skills.
+								</p>
+							</div>
+							<div class="flex flex-col gap-[1rem]">
+								<div class="flex gap-[2rem] items-center">
+									<input
+										class=" h-10 w-full border-[#222324] rounded-full  focus:ring-2 focus:ring-[#2d2d2d] focus:ring-offset-4 focus:border-[#222324] focus:ring-offset-black dark:ring-offset-slate-900 bg-black"
+										id="email_home"
+										placeholder="Enter your email" data-id="29" type="email">
+									<button
+										class="py-[0.5rem] px-3 text-nowrap rounded-full bg-white text-black">
+										Get Started
+									</button>
+								</div>
+								<div>
+									Sign up to get notified when we launch new courses. <a
+										href="/index.html" class="hover:underline">Terms &amp;
+										Conditions</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="my-[11.125rem] flex justify-between gap-[16rem]  items-center mx-[2rem]">
+							<div>
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Join Our Vibrant Community
+
+								</h1>
+								<p class="text-center">Connect with fellow learners, get support from
+									experienced
+									developers,
+									and collaborate on projects to accelerate your learning journey.</p>
+							</div>
+							<div class="flex gap-[2rem]">
+								<button class="py-1 px-3 text-nowrap rounded-full bg-white text-black">
+									Join Now
+								</button>
+								<button class="py-1 px-5 text-nowrap rounded-full  text-white"
+									style="border: 0.5px solid #3a3a3a;">
+									Learn more
+								</button>
+							</div>
+
+						</div>
+						<div class="flex justify-between items-center py-[1rem] px-[2rem]"
+							style="border-top: 0.5px solid #202020;">
+							<div>
+								© 2024 Website Programming Service. All rights reserved.
+							</div>
+							<div class="flex gap-[2rem]">
+								<a href class="hover:underline">Terms of Service</a>
+								<a href class="hover:underline">Privacy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="featureContent" class="content" style="overflow-y:auto;">
+					<div class="container_height">
+						<div
+							class="flex flex-col justify-center container_height items-center gap-[4rem]">
+							<div class="flex flex-col gap-[2rem] items-center">
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Unleash the Power of Website Programming
+								</h1>
+								<p
+									class="text-center xl:text-xl sm:text-xl max-[468px]:text-[10px] xl:w-[50rem] max-[468px]:w-[20rem]"
+									style="color:#ffffff">
+									Our cutting-edge website programming service empowers you to create
+									stunning, functional websites that captivate your audience and drive
+									your business forward.
+								</p>
+							</div>
+							<div class="flex gap-[2rem]">
+								<button class="py-1 px-3 rounded-full bg-white text-black">
+									Get Started
+								</button>
+								<button class="py-1 px-5 rounded-full  text-white"
+									style="border: 0.5px solid #3a3a3a;">
+									Learn more
+								</button>
+							</div>
+						</div>
+						<div>
+							<div
+								class="grid xl:grid-cols-3 gap-[3rem] justify-items-center sm:grid-cols-1 md:grid-cols-2">
+								<div
+									class="w-[22rem] rounded-lg flex gap-[1.5rem] flex-col px-4 py-5  bg-[#171717]">
+									<svg data-id="22" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="h-8 w-8 text-[#ffffff]"><path
+											d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><circle
+											cx="12" cy="12" r="4"></circle></svg>
+									<h1 class="font-bold text-xl">Rapid Development</h1>
+									<p>
+										Our team of expert developers leverages the latest technologies and
+										frameworks to deliver lightning-fast websites that get your business
+										online in no time.
+									</p>
+								</div>
+								<div
+									class="w-[22rem] rounded-lg flex gap-[1.5rem] flex-col px-4 py-5  bg-[#171717]">
+									<svg data-id="26" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="h-8 w-8 text-[#ffffff]"><path
+											d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle
+											cx="12" cy="12" r="3"></circle></svg>
+									<h1 class="font-bold text-xl">Rapid Development</h1>
+									<p>
+										Our team of expert developers leverages the latest technologies and
+										frameworks to deliver lightning-fast websites that get your business
+										online in no time.
+									</p>
+								</div>
+								<div
+									class="w-[22rem] rounded-lg flex gap-[1.5rem] flex-col px-4 py-5  bg-[#171717]">
+									<svg data-id="30" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="h-8 w-8 text-[#ffffff]"><path
+											d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path
+											d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path
+											d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path
+											d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+									<h1 class="font-bold text-xl">Rapid Development</h1>
+									<p>
+										Our team of expert developers leverages the latest technologies and
+										frameworks to deliver lightning-fast websites that get your business
+										online in no time.
+									</p>
+								</div>
+								<div
+									class="w-[22rem] rounded-lg flex gap-[1.5rem] flex-col px-4 py-5  bg-[#171717]">
+									<svg data-id="34" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="h-8 w-8 text-[#ffffff]"><path
+											d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path><path
+											d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path
+											d="M12 2v2"></path><path d="M12 22v-2"></path><path
+											d="m17 20.66-1-1.73"></path><path d="M11 10.27 7 3.34"></path><path
+											d="m20.66 17-1.73-1"></path><path d="m3.34 7 1.73 1"></path><path
+											d="M14 12h8"></path><path d="M2 12h2"></path><path
+											d="m20.66 7-1.73 1"></path><path d="m3.34 17 1.73-1"></path><path
+											d="m17 3.34-1 1.73"></path><path d="m11 13.73-4 6.93"></path></svg>
+									<h1 class="font-bold text-xl">Rapid Development</h1>
+									<p>
+										Our team of expert developers leverages the latest technologies and
+										frameworks to deliver lightning-fast websites that get your business
+										online in no time.
+									</p>
+								</div>
+								<div
+									class="w-[22rem] rounded-lg flex gap-[1.5rem] flex-col px-4 py-5  bg-[#171717]">
+									<svg data-id="38" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="h-8 w-8 text-[#ffffff]"><path
+											d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path
+											d="M21 3v5h-5"></path><path
+											d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path
+											d="M8 16H3v5"></path></svg>
+									<h1 class="font-bold text-xl">Rapid Development</h1>
+									<p>
+										Our team of expert developers leverages the latest technologies and
+										frameworks to deliver lightning-fast websites that get your business
+										online in no time.
+									</p>
+								</div>
+								<div
+									class="w-[22rem] rounded-lg flex gap-[1.5rem] flex-col px-4 py-5  bg-[#171717]">
+									<svg data-id="42" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="h-8 w-8 text-[#ffffff]"><path
+											d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+									<h1 class="font-bold text-xl">Rapid Development</h1>
+									<p>
+										Our team of expert developers leverages the latest technologies and
+										frameworks to deliver lightning-fast websites that get your business
+										online in no time.
+									</p>
+								</div>
+
+							</div>
+						</div>
+						<div
+							class="mt-[11.125rem] flex flex-col mb-[11.125rem] gap-[3rem] items-center">
+							<div class="flex flex-col gap-[2rem]">
+								<h1 class="text-[2rem] text-center font-bold">Take Your Website to the
+									Next Level
+								</h1>
+								<p class="mx-[20rem] text-[1.2rem] text-center">Our website programming
+									service
+									provides the tools
+									and expertise you need to create a powerful online presence that
+									drives
+									results for your business.
+								</p>
+							</div>
+							<div class="flex gap-[2rem]">
+								<button class="py-1 px-3 rounded-full bg-white text-black">
+									Get Started
+								</button>
+								<button class="py-1 px-5 rounded-full  text-white"
+									style="border: 0.5px solid #3a3a3a;">
+									Learn more
+								</button>
+							</div>
+						</div>
+						<div class="flex justify-between items-center py-[1rem] px-[2rem]"
+							style="border-top: 0.5px solid #202020;">
+							<div>
+								© 2024 Website Programming Service. All rights reserved.
+							</div>
+							<div class="flex gap-[2rem]">
+								<a href class="hover:underline">Terms of Service</a>
+								<a href class="hover:underline">Privacy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="blogContent" class="content" style="overflow-y:auto;">
+					<div class="container_height">
+						<div
+							class="flex flex-col justify-center container_height items-center gap-[4rem]">
+							<div class="flex flex-col gap-[2rem] items-center">
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Dive into the World of Programming
+								</h1>
+								<p
+									class="text-center xl:text-xl sm:text-xl max-[468px]:text-[10px] xl:w-[50rem] max-[468px]:w-[20rem]"
+									style="color:#ffffff">
+									Explore a wide range of programming topics, from web development to
+									software engineering and DevOps. Stay up-to-date with the latest trends
+									and insights.
+								</p>
+							</div>
+							<div class="flex gap-[2rem]">
+								<button class="py-1 px-3 rounded-full bg-white text-black">
+									Read the Blog
+								</button>
+							</div>
+						</div>
+						<div class="flex justify-between items-center py-[1rem] px-[2rem]"
+							style="border-top: 0.5px solid #202020;">
+							<div>
+								© 2024 Website Programming Service. All rights reserved.
+							</div>
+							<div class="flex gap-[2rem]">
+								<a href class="hover:underline">Terms of Service</a>
+								<a href class="hover:underline">Privacy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="productContent" class="content" style="overflow-y:auto;">
+					<div class="container_height">
+						<div
+							class="flex flex-col justify-center container_height items-center gap-[4rem]">
+							<div class="flex flex-col gap-[2rem] items-center">
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Product: The Complete Platform for Building Web Apps
+								</h1>
+								<p
+									class="text-center xl:text-xl sm:text-xl max-[468px]:text-[10px] xl:w-[50rem] max-[468px]:w-[20rem]"
+									style="color:#ffffff">
+									Beautifully designed components that you can copy and paste into your
+									apps. Accessible. Customizable. Open Source.
+								</p>
+							</div>
+							<div class="flex gap-[2rem]">
+								<button class="py-1 px-3 rounded-full bg-white text-black">
+									Get Started
+								</button>
+							</div>
+						</div>
+						<div class="w-full" style="border-top:0.5px solid #202020"></div>
+						<div class="mt-[11.125rem] mb-[11.125rem]">
+							<div class="flex flex-col gap-[1rem] items-center ">
+								<button class="px-3 py-1  rounded-full bg-white text-black">Key
+									Feature
+								</button>
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Powerful Tools for Developers
+								</h1>
+								<p
+									class="text-center xl:text-xl sm:text-xl max-[468px]:text-[10px] xl:w-[50rem] max-[468px]:w-[20rem]"
+									style="color:#ffffff">
+									Streamline your software development workflow with our cutting-edge
+									features.
+								</p>
+							</div>
+							<div
+								class="grid mt-[5rem] grid-cols-3 justify-items-center gap-[2rem]">
+								<div class="flex flex-col gap-[1rem] w-[20rem]">
+									<div class="flex items-center gap-4">
+										<div class="rounded-full bg-gray-100 p-3 dark:bg-[#1f2123]"
+											data-id="31">
+											<svg class="text-white" data-id="32"
+												xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+												viewBox="0 0 24 24" fill="none" stroke="currentColor"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="h-6 w-6"><rect width="8" height="8" x="2" y="2"
+													rx="2"></rect><path
+													d="M14 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"></path><path
+													d="M20 2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2"></path><path
+													d="M10 18H5c-1.7 0-3-1.3-3-3v-1"></path><polyline
+													points="7 21 10 18 7 15"></polyline><rect width="8" height="8"
+													x="14" y="14" rx="2"></rect>
+											</svg>
+										</div>
+										<p class="text-white">Collaboration</p>
+									</div>
+									<div class="text-white">Seamless team collaboration with built-in code
+										review tools.
+									</div>
+								</div>
+								<div class="flex flex-col gap-[1rem] w-[20rem]">
+									<div class="flex items-center gap-4">
+										<div class="rounded-full bg-gray-100 p-3 dark:bg-[#1f2123]"
+											data-id="31">
+											<svg data-id="38" xmlns="http://www.w3.org/2000/svg" width="24"
+												height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="h-6 w-6"><path d="M12 8V4H8"></path><rect width="16"
+													height="12" x="4" y="8" rx="2"></rect><path
+													d="M2 14h2"></path><path d="M20 14h2"></path><path
+													d="M15 13v2"></path><path d="M9 13v2"></path>
+											</svg>
+										</div>
+										<p class="text-white">Automation</p>
+									</div>
+									<div class="text-white">Automate your workflow with continuous
+										integration and delivery.</div>
+								</div>
+								<div class="flex flex-col gap-[1rem] w-[20rem]">
+									<div class="flex items-center gap-4">
+										<div class="rounded-full bg-gray-100 p-3 dark:bg-[#1f2123]"
+											data-id="31">
+											<svg data-id="44" xmlns="http://www.w3.org/2000/svg" width="24"
+												height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="h-6 w-6"><path
+													d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path
+													d="M14 15H9v-5"></path><path d="M16 3h5v5"></path><path
+													d="M21 3 9 15"></path>
+											</svg>
+										</div>
+										<p class="text-white">Scalability</p>
+									</div>
+									<div class="text-white">Deploy to the cloud with a single click and
+										scale with ease.</div>
+								</div>
+								<div class="flex flex-col gap-[1rem] w-[20rem]">
+									<div class="flex items-center gap-4">
+										<div class="rounded-full bg-gray-100 p-3 dark:bg-[#1f2123]"
+											data-id="31">
+											<svg data-id="50" xmlns="http://www.w3.org/2000/svg" width="24"
+												height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="h-6 w-6"><circle cx="12" cy="12" r="10"></circle><path
+													d="M12 16v-4"></path><path d="M12 8h.01"></path>
+											</svg>
+										</div>
+										<p class="text-white">Analytics</p>
+									</div>
+									<div class="text-white">Get granular, real-time insights on your
+										application's performance.</div>
+								</div>
+								<div class="flex flex-col gap-[1rem] w-[20rem]">
+									<div class="flex items-center gap-4">
+										<div class="rounded-full bg-gray-100 p-3 dark:bg-[#1f2123]"
+											data-id="31">
+											<svg data-id="56" xmlns="http://www.w3.org/2000/svg" width="24"
+												height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="h-6 w-6"><rect width="18" height="11" x="3" y="11" rx="2"
+													ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+											</svg>
+										</div>
+										<p class="text-white">Security</p>
+									</div>
+									<div class="text-white">Secure your application with our
+										enterprise-grade security features.</div>
+								</div>
+								<div class="flex flex-col gap-[1rem] w-[20rem]">
+									<div class="flex items-center gap-4">
+										<div class="rounded-full bg-gray-100 p-3 dark:bg-[#1f2123]"
+											data-id="31">
+											<svg data-id="62" xmlns="http://www.w3.org/2000/svg" width="24"
+												height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+												stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+												class="h-6 w-6"><path
+													d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9"
+													cy="7" r="4"></circle><line x1="19" x2="19" y1="8"
+													y2="14"></line><line x1="22" x2="16" y1="11" y2="11"></line>
+											</svg>
+										</div>
+										<p class="text-white">Personalization</p>
+									</div>
+									<div class="text-white">Deliver dynamic, personalized content to your
+										users.</div>
+								</div>
+							</div>
+							<div class="flex mt-[3rem] gap-[2rem] justify-center">
+								<button class="py-1 px-3 rounded-full bg-white text-black">
+									Contact Sales
+								</button>
+								<button class="py-1 px-5 rounded-full  text-white"
+									style="border: 0.5px solid #3a3a3a;">
+									Learn more
+								</button>
+
+							</div>
+						</div>
+						<div class="w-full" style="border-top:0.5px solid #202020"></div>
+						<div class="mb-[11.125rem] mt-[11.125rem]">
+							<div
+								class="flex flex-col mx-auto items-center border border-[#322e2e] w-fit rounded-lg">
+								<div class="grid grid-cols-3 border-b border-[#322e2e]">
+									<div class="w-[16rem] h-[12rem] "></div>
+									<div class="w-[16rem]  border-x border-[#322e2e] h-[12rem] "></div>
+									<div class="w-[16rem] h-[12rem] "></div>
+
+								</div>
+								<div class="grid grid-cols-3">
+									<div class="w-[16rem] h-[12rem] "></div>
+									<div class="w-[16rem] border-x border-[#322e2e] h-[12rem] "></div>
+									<div class="w-[16rem] h-[12rem] "></div>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-between items-center py-[1rem] px-[2rem]"
+							style="border-top: 0.5px solid #202020;">
+							<div>
+								© 2024 Website Programming Service. All rights reserved.
+							</div>
+							<div class="flex gap-[2rem]">
+								<a href class="hover:underline">Terms of Service</a>
+								<a href class="hover:underline">Privacy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="resourcesContent" class="content" style="overflow-y:auto;">
+					<div class="container_height">
+						<div
+							class="flex flex-col justify-center container_height items-center gap-[4rem]">
+							<div class="flex flex-col items-center gap-[2rem]">
+								<h1
+									class=" font-bold text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+									style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+									Discover the Best Resources for Software Development
+								</h1>
+								<p
+									class="text-center items-center xl:text-xl sm:text-xl max-[468px]:text-[10px] xl:w-[50rem] max-[468px]:w-[20rem]"
+									style="color:#ffffff">
+									Explore a curated collection of tutorials, tools, blogs, and community
+									resources to enhance your software development journey.
+								</p>
+							</div>
+							<div class="flex gap-[2rem]">
+								<button class="py-1 px-5 rounded-full  text-white"
+									style="border: 0.5px solid #3a3a3a;">
+									Explore Resources
+								</button>
+							</div>
+						</div>
+						<div class="w-full" style="border-top:0.5px solid #202020"></div>
+						<div class="mt-[11.125rem] mb-[11.125rem]">
+							<div class="flex justify-center">
+								<img src="./src/Svg/frame.svg" alt>
+							</div>
+						</div>
+						<div class="flex justify-between items-center py-[1rem] px-[2rem]"
+							style="border-top: 0.5px solid #202020;">
+							<div>
+								© 2024 Website Programming Service. All rights reserved.
+							</div>
+							<div class="flex gap-[2rem]">
+								<a href class="hover:underline">Terms of Service</a>
+								<a href class="hover:underline">Privacy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="loginContent" class="content">
+					<div class>
+						<div
+							class="flex flex-col justify-center container_height items-center gap-[4rem]">
+							<div class="flex flex-col gap-[2rem]">
+								<div class="flex flex-col gap-4">
+									<h1 class="text-4xl text-white font-bold text-center">Login with
+										GitHub</h1>
+									<p class="text-center text-2xl">Sign in to your account using your
+										GitHub
+										credentials.</p>
+								</div>
+								<div
+									class="py-2 cursor-pointer px-4 flex rounded-lg gap-2 items-center justify-center"
+									style="border: 1px solid rgb(29, 29, 29)">
+									<svg data-id="6" xmlns="http://www.w3.org/2000/svg" width="24"
+										height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="mr-2 h-5 w-5"><path
+											d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path
+											d="M9 18c-4.51 2-5-2-7-2"></path>
+									</svg>
+									<p>Login with GitHub</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-between items-center py-[1rem] px-[2rem]"
+						style="border-top: 0.5px solid #202020;">
+						<div>
+							© 2024 Website Programming Service. All rights reserved.
+						</div>
+						<div class="flex gap-[2rem]">
+							<a href class="hover:underline">Terms of Service</a>
+							<a href class="hover:underline">Privacy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const show_ct_web = setTimeout(show_content_web(), 5000);
+
+			var loading_bt = document.getElementById("loading_bt");
+			var content_web = document.getElementById("content_web");
+			function show_content_web() {
+			loading_bt.classList.remove("flex");
+			loading_bt.classList.add("hidden");
+			content_web.classList.remove("hidden");
+			content_web.classList.add("block");
+			}
+
+		</script>
+		<script type="text/javascript"
+			src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+		<link
+			href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
+			rel="stylesheet">
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+		<script type="text/javascript" src="cssanimation-gsap.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="./node_modules/datamaps/dist/datamaps.world.min.js"></script>
+		<script src="./node_modules/preline/dist/preline.js"></script>
+		<script src="./node_modules/lodash/lodash.min.js"></script>
+		<script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
+		<script
+			src="https://preline.co/assets/js/hs-apexcharts-helpers.js"></script>
+
+		<script src="script.js"></script>
+		<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>

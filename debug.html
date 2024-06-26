@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    .parent {
+      width: 300px;
+      height: 150px;
+      overflow: auto;
+      border: 1px solid #000;
+      position: relative;
+    }
+    .child {
+      width: 300px;
+      height: 300px;
+      background-color: lightblue;
+    }
+  </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="parent" id="parent">
+            <div class="child" id="child">
+                Đây là nội dung rất dài và rộng. Bạn cần phải cuộn để xem toàn
+                bộ.
+            </div>
+        </div>
+
+        <script>
+    function isChildOutOfViewHeight(parent, child) {
+      const parentRect = parent.getBoundingClientRect();
+      const childRect = child.getBoundingClientRect();
+
+      return (
+        childRect.top < parentRect.top || 
+        childRect.bottom > parentRect.bottom
+      );
+    }
+
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+
+    // Kiểm tra ngay lập tức
+    console.log(isChildOutOfViewHeight(parent, child));
+
+    // Kiểm tra khi có sự kiện cuộn
+    parent.addEventListener('scroll', () => {
+      console.log(isChildOutOfViewHeight(parent, child));
+    });
+  </script>
+    </body>
+</html>
