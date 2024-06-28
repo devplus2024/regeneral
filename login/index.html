@@ -99,7 +99,7 @@
         class="h-screen relative bg-[black] no-scroll dark:[color-scheme:dark]"
         style="background-color: black;overflow-y: hidden;">
         <div class="content_hidden" id="content_web">
-            <div class=" sticky top-0 flex-col w-full"
+            <div class="hidden sticky top-0 flex-col w-full"
                 style="z-index: 5;">
                 <div
                     class="sticky w-full top-[0rem] py-[1.1rem] header_main_up_nv_r_four header_nh_child_class header_transparent_nr4b px-2"
@@ -214,14 +214,22 @@
                                     class="flex gap-[3rem] flex-col items-center justify-center">
                                     <div class="flex flex-col gap-[2rem]">
                                         <div
-                                            class="w-[20rem] flex items-center justify-center h-[2.6rem] rounded-sm "
+                                            class="w-[30rem] cursor-pointer flex items-center gap-[2rem] text-xl flex items-center justify-center h-[3rem] rounded-sm "
                                             style="box-shadow: 0 0 0 1px #1A1A1A;">
-                                            Sign In with Github
+											<div>
+											    <i data-lucide="github"></i>
+											</div>
+                                             <p>Sign In with Github</p>
+											 
                                         </div>
                                         <div
-                                            class="w-[20rem] flex items-center justify-center h-[2.6rem] rounded-sm "
+                                            class="w-[30rem] cursor-pointer flex gap-[2rem] items-center text-xl flex items-center justify-center h-[3rem] rounded-sm "
                                             style="box-shadow: 0 0 0 1px #1A1A1A;">
-                                            Sign In with GitLab
+											<div>
+											    <i data-lucide="gitlab"></i>
+											</div>
+											<p>Sign In with GitLab</p>
+                                            
 
                                         </div>
 
@@ -229,22 +237,25 @@
                                     <div class="flex flex-col gap-[2rem]">
                                         <div class="relative">
                                             <input id="email_input"
-                                                class="w-[20rem] h-[2.5rem] focus:border-none focus:ring-[#a1a1a1] border-none rounded-md bg-[#0c0c0c]">
+                                                class="w-[30rem] pl-[44px] h-[2.5rem] focus:border-none focus:ring-[#a1a1a1] border border-[#302f2f] rounded-md bg-[#000000]">
                                             <label for="email_input"
                                                 id="email_input_lable"
-                                                class="absolute -translate-y-1/2  left-[2rem] ">Email</label>
+                                                class="absolute -translate-y-1/2 cursor-text  left-[38px] px-[6px] text-[#a1a1a1] ">Email</label>
+											<i data-lucide="user" class="absolute left-[0.5rem] top-1/2 -translate-y-1/2"></i>
                                         </div>
                                         <div class="relative">
-                                            <input id="email_input"
-                                                class="w-[20rem] h-[2.5rem] focus:border-none focus:ring-[#a1a1a1] border-none rounded-md bg-[#0c0c0c]">
-                                            <label for="email_input"
-                                                id="email_input_lable"
-                                                class="absolute -translate-y-1/2  left-[2rem] ">Password</label>
+                                            <input id="password_input"
+                                                class="w-[30rem] pl-[44px] h-[2.5rem] focus:border-none focus:ring-[#a1a1a1] border border-[#302f2f] rounded-md bg-[#000000]">
+                                            <label for="password_input"
+                                                id="password_input_lable"
+                                                class="absolute -translate-y-1/2 cursor-text  left-[38px] px-[6px] text-[#a1a1a1] ">Password</label>
+											<i data-lucide="lock" class="absolute left-[0.5rem] top-1/2 -translate-y-1/2"></i>
+											<i data-lucide="eye" class="absolute right-[0.5rem] top-1/2 -translate-y-1/2"></i>
                                         </div>
                                     </div>
                                     <div>
                                         <button
-                                            class="bg-[#e1e1e1] rounded-md py-1 px-3 text-black">
+                                            class="hover:bg-[#e1e1e1] bg-[#e9e9e9] transition-all duration-300 ease-out rounded-md py-2 w-[30rem] px-3 text-black">
                                             Sign In
 
                                         </button>

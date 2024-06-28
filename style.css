@@ -326,9 +326,28 @@ body {
 #email_input:focus + #email_input_lable {
   top: 0;
   background-color: #000000;
+   color:white;
+   padding-left:6px;
+   padding-right:6px;
 }
 
 #email_input_lable {
   top: 50%;
   transition: top 0.25s ease-out;
+ 
+}
+
+
+#password_input:focus + #password_input_lable {
+  top: 0;
+  background-color: #000000;
+   color:white;
+   padding-left:6px;
+   padding-right:6px;
+}
+
+#password_input_lable {
+  top: 50%;
+  transition: top 0.25s ease-out;
+ 
 }
