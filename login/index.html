@@ -32,6 +32,8 @@
             content="A website Learning Programming By Leader">
         <meta name="twitter:image"
             content="https://developplus2024.github.io/NV4Limited/src/Image/banner.jpg">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devplus2024/font-libraries/font.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -96,11 +98,9 @@
     <body
         class="h-screen relative bg-[black] no-scroll dark:[color-scheme:dark]"
         style="background-color: black;overflow-y: hidden;">
-        <div class="h-screen flex justify-center items-center" id="loading_bt">
-            <button class="loading_button"></button>
-        </div>
         <div class="content_hidden" id="content_web">
-            <div class="flex sticky top-0 flex-col w-full" style="z-index: 5;">
+            <div class=" sticky top-0 flex-col w-full"
+                style="z-index: 5;">
                 <div
                     class="sticky w-full top-[0rem] py-[1.1rem] header_main_up_nv_r_four header_nh_child_class header_transparent_nr4b px-2"
                     id="nav_gj_gsl_nve_rt"
@@ -113,7 +113,7 @@
                                     class="a__hover relative hover:text-white select-none">
                                     <p class="text-xl"
                                         style="letter-spacing: 0rem; font-family: Geist-Black, sans-serif;">
-                                        R - NV4
+                                        /:\
                                     </p>
                                 </a>
                             </div>
@@ -203,34 +203,54 @@
                     style="overflow-y: auto;">
                     <div class="container_height child">
                         <div
-                            class="flex flex-col justify-center container_height items-center gap-[4rem]">
-                            <div class="flex flex-col gap-[2rem]">
-                                <div class="flex flex-col gap-4">
-                                    <h1
-                                        class="text-4xl text-white font-bold text-center">Login
-                                        with
-                                        GitHub</h1>
-                                    <p class="text-center text-2xl">Sign in to
-                                        your account using your
-                                        GitHub
-                                        credentials.</p>
+                            class="flex flex-col my-[4rem] justify-center container_height items-center gap-[4rem]">
+                            <div
+                                class="rounded-md flex gap-[3rem] flex-col items-center justify-center bg-gradient-to-b to-[#00000022] from-[#000000] w-[25rem] h-[35rem] "
+                                style="box-shadow:  0 0 0 1px #000000;">
+                                <div>
+                                    <p class="text-[3rem]">/:\</p>
                                 </div>
                                 <div
-                                    class="py-2 cursor-pointer px-4 flex rounded-lg gap-2 items-center justify-center"
-                                    style="border: 1px solid rgb(29, 29, 29)">
-                                    <svg data-id="6"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="mr-2 h-5 w-5"><path
-                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path
-                                            d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>
-                                    <p>Login with GitHub</p>
+                                    class="flex gap-[3rem] flex-col items-center justify-center">
+                                    <div class="flex flex-col gap-[2rem]">
+                                        <div
+                                            class="w-[20rem] flex items-center justify-center h-[2.6rem] rounded-sm "
+                                            style="box-shadow: 0 0 0 1px #1A1A1A;">
+                                            Sign In with Github
+                                        </div>
+                                        <div
+                                            class="w-[20rem] flex items-center justify-center h-[2.6rem] rounded-sm "
+                                            style="box-shadow: 0 0 0 1px #1A1A1A;">
+                                            Sign In with GitLab
+
+                                        </div>
+
+                                    </div>
+                                    <div class="flex flex-col gap-[2rem]">
+                                        <div class="relative">
+                                            <input id="email_input"
+                                                class="w-[20rem] h-[2.5rem] focus:border-none focus:ring-[#a1a1a1] border-none rounded-md bg-[#0c0c0c]">
+                                            <label for="email_input"
+                                                id="email_input_lable"
+                                                class="absolute -translate-y-1/2  left-[2rem] ">Email</label>
+                                        </div>
+                                        <div class="relative">
+                                            <input id="email_input"
+                                                class="w-[20rem] h-[2.5rem] focus:border-none focus:ring-[#a1a1a1] border-none rounded-md bg-[#0c0c0c]">
+                                            <label for="email_input"
+                                                id="email_input_lable"
+                                                class="absolute -translate-y-1/2  left-[2rem] ">Password</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="bg-[#e1e1e1] rounded-md py-1 px-3 text-black">
+                                            Sign In
+
+                                        </button>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                         <div

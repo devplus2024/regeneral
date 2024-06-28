@@ -78,6 +78,8 @@ html {
 
 body {
   font-family: "Geist-Regular", sans-serif;
+  font-family: "Geist-Regular", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   box-sizing: border-box;
   background-color: black;
   scroll-behavior: smooth;
@@ -91,6 +93,7 @@ body {
   --end-color: #007cf0;
   --themed-border-red: hsla(0, 100%, 50%, 0.63);
   --themed-border-nav: rgba(255, 255, 0, 0.788);
+  --animate-delay: 0.5s;
 }
 * {
   box-sizing: border-box;
@@ -111,7 +114,7 @@ body {
 }
 
 .container_height {
-  height: calc(100vh - 66.19px);
+  height: calc(100vh - 74.19px);
   scroll-behavior: smooth;
 }
 
@@ -165,16 +168,6 @@ body {
   body:not(.dark):not(.light) .icon-preview {
     filter: invert(1);
   }
-}
-
-.content_hidden {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
-
-.content_show {
-  opacity: 100;
-  transition: opacity 0.5s ease-out;
 }
 
 #homeContent::-webkit-scrollbar,
@@ -277,7 +270,7 @@ body {
 }
 
 .header_transparent_nr4b.header_main_up_nv_r_four {
-  background-color: transparent;
+  background-color: black;
   transition: box-shadow 0.2s ease 0s, background-color 0.2s ease 0s;
 }
 
@@ -328,4 +321,14 @@ body {
 
 .animate__animated.animate__fadeInUpBig {
   --animate-delay: 2s;
+}
+
+#email_input:focus + #email_input_lable {
+  top: 0;
+  background-color: #000000;
+}
+
+#email_input_lable {
+  top: 50%;
+  transition: top 0.25s ease-out;
 }

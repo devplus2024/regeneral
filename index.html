@@ -10,7 +10,6 @@
 		<meta property="og:description" content="The Website SoftWare Development">
 		<link rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devplus2024/font-libraries/font.css">
-		<!-- Development version -->
 		<link rel="stylesheet"
 			href="https://devplus2024.github.io/font-libraries/font.css">
 		<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -20,7 +19,6 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link href="/dist/main.css" rel="stylesheet">
-		<!-- Production version -->
 		<script src="https://unpkg.com/lucide@latest"></script>
 		<meta property="og:image"
 			content="https://devplus2024.github.io/regeneral/banner.png">
@@ -92,23 +90,32 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Comfortaa:wght@300..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 			rel="stylesheet">
-		<!-- <script src="./preload.js"></script> -->
+		<script src="./preload.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/microsoft-translator@3/dist/microsoft-translator.min.js"></script>
 	</head>
 	<body
 		class="h-screen relative bg-[black] no-scroll dark:[color-scheme:dark]"
 		style="overflow-y:hidden;background-color: black;">
-		<!-- <div class="h-screen flex justify-center items-center" id="loading_bt">
-			<button class="loading_button"></button>
-		</div> -->
 		<div class="content_show" id="content_web">
+			<div class="xl:hidden sm:block md:block">
+				<i data-lucide="menu" class="ml-[2rem]"></i>
+			</div>
 			<div
-				class="flex sticky animate__animated animate__fadeILeft top-0 flex-col w-full"
+				class="xl:flex xl:sticky md:hidden lg:flex sm:hidden animate__animated animate__fadeILeft top-[0.5rem] flex-col mx-[1rem]"
 				style="z-index: 5;">
 				<div
+					class="border-l border-t w-4 h-4 absolute -left-[1px] -top-[1px]">
+				</div>
+				<div
+					class="border-l border-t w-4 h-4 absolute -right-[1px] -top-[1px] rotate-90"></div>
+				<div
+					class="border-l border-t w-4 h-4 absolute -left-[1px] -bottom-[1px] -rotate-90"></div>
+				<div
+					class="border-l border-t w-4 h-4 absolute -right-[1px] -bottom-[1px] rotate-180"></div>
+				<div
 					class="sticky w-full top-[0rem] py-[1.1rem] header_main_up_nv_r_four header_nh_child_class header_transparent_nr4b px-[2rem]"
-					id="nav_gj_gsl_nve_rt" style="border-top: 1px solid #000000;">
+					id="nav_gj_gsl_nve_rt" style="border-top: 1px solid #2c2b2b;">
 					<div
 						class="text-white text-sm flex flex-wrap justify-between items-center gap-[4rem]">
 						<div class="flex gap-[4rem] items-center">
@@ -117,7 +124,7 @@
 									class="a__hover relative hover:text-white select-none">
 									<p class="text-xl"
 										style="letter-spacing: 0rem; font-family: Geist-Black, sans-serif;">
-										RCORE
+										/:\
 									</p>
 								</a>
 							</div>
@@ -162,7 +169,7 @@
 									<a href="./contact/"
 										class="a__hover font-medium relative hover:text-white select-none"
 										data-view="contact">
-										Contact
+										<p>Contact</p>
 									</a>
 								</div>
 							</div>
@@ -174,17 +181,17 @@
 									<div
 										class="a__hover text-[#a1a1a1] hover:text-white text-[16px] rounded-full px-4"
 										style="font-family: Geist-Regular;">
-										Sign Up
+										<p class>Sign In</p>
 									</div>
 								</a>
 							</button>
 							<button
-								class="py-1 bg-black button_download_yd_nde_rnmp_xs relative rounded-md"
+								class="py-1 bg-[#ebebeb] hover:bg-[#c9c8c8] relative rounded-md transition-all duration-300 ease-out"
 								style="border: 0.5px solid #ffffff24;">
 								<a href="./downloads/">
 									<div
-										class="a__hover text-white flex items-center gap-3 rounded-md px-[1rem] cursor-pointer select-none transition-all duration-300">
-										<p>Try Our Services</p>
+										class="a__hover text-black font-medium flex items-center gap-3 rounded-md px-[1rem] cursor-pointer select-none transition-all duration-300">
+										<p>Get Started</p>
 									</div>
 								</a>
 							</button>
@@ -196,20 +203,21 @@
 				<div id="homeContent" class="content active parent"
 					style="overflow-y:auto;">
 					<div class="container_height child">
-						<i data-lucide="blocks" class="text-white hidden"></i>
+						<i data-lucide="blocks" class="text-white hidden ml-[2rem]"></i>
 						<div
-							class="flex animate__fadeInUpBig animate__animated gap-[3rem] flex-col relative  px-3 justify-center items-center mx-[6rem] container_height">
-							<div class="flex flex-col gap-[2rem] items-center">
+							class="flex gap-[3rem] flex-col relative  px-3 justify-center items-center mx-[6rem] container_height">
+							<div
+								class="flex animate__fadeInUp animate__animated animate__faster  flex-col gap-[2rem] items-center">
 								<div class>
 									<h1
-										class=" font-bold xl:w-[40rem] text-center xl:text-[2.6rem] sm:text-[3.5rem] max-[468px]:text-[1.9rem]"
+										class=" font-bold xl:w-[40rem] text-center xl:text-[2.6rem] sm:w-[30rem] md:text-[2.6rem] md:w-[40rem] sm:text-[2rem] max-[468px]:text-[1.9rem]"
 										id="text_intro_Home"
-										style="font-family: Geist-Bold,sans-serif;line-height: 50px;letter-spacing: -.05em;">
+										style="font-family: Geist-Medium,sans-serif;line-height: 50px;letter-spacing: -.05em;">
 										Transforming Businesses with Innovative Software Solutions
 									</h1>
 								</div>
 								<p
-									class="text-center xl:text-[1.1rem] xl:leading-[2rem]  sm:text-sm max-[468px]:text-[10px] xl:w-[50rem] sm:w-[50rem] max-[468px]:w-[20rem]"
+									class="text-center xl:text-[1.1rem]  animate__fadeInUp animate__animated animate__fast xl:leading-[2rem]  sm:text-md max-[468px]:text-[10px] xl:w-[50rem] sm:w-[30rem] max-[468px]:w-[20rem]"
 									style="color:#ffffff">
 									NV4 Software is a leading software development company dedicated to
 									helping businesses achieve their digital transformation goals. Our team
@@ -217,9 +225,10 @@
 									needs.
 								</p>
 							</div>
-							<div class="flex  gap-[4rem]">
+							<div
+								class="flex  gap-[4rem] animate__fadeInUp animate__animated animate__delay-1s">
 								<div
-									class="flex bg-[#ffffff] text-md relative py-2 justify-center px-[2rem] cursor-pointer gap-1 items-center button_Signup rounded-lg"
+									class="flex bg-[#ebebeb] transition-all ease-out duration-300 hover:bg-[#c9c8c8] text-md relative py-2 justify-center px-[2rem] cursor-pointer gap-1 items-center button_Signup rounded-lg"
 									onclick="showContent('loginContent')"
 									id="hover_button_home_1">
 									<button
@@ -313,9 +322,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="flex ">
-								<p class="text-[#acacac] text-nowrap ml-[67px]">ReCore © 2024</p>
-								<div class="flex w-full gap-[1rem] justify-end">
+							<div class="flex flex-col ml-[67px] gap-[2rem]">
+								<p class="text-[#acacac] text-nowrap ">ReCore © 2024</p>
+								<div class="flex  gap-[1rem] ">
 									<i data-lucide="github" fill="#acacac" stroke="#acacac"></i>
 									<i data-lucide="twitter" fill="#acacac" stroke="#acacac"></i>
 									<i data-lucide="facebook" fill="#acacac" stroke="#acacac"></i>

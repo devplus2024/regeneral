@@ -224,16 +224,6 @@ body {
   }
 }
 
-.content_hidden {
-  opacity: 0;
-  transition: opacity 1s ease-out;
-}
-
-.content_show {
-  opacity: 100;
-  transition: opacity 1s ease-out;
-}
-
 #homeContent::-webkit-scrollbar,
 #featureContent::-webkit-scrollbar,
 #productsContent::-webkit-scrollbar,
