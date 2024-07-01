@@ -326,28 +326,50 @@ body {
 #email_input:focus + #email_input_lable {
   top: 0;
   background-color: #000000;
-   color:white;
-   padding-left:6px;
-   padding-right:6px;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 #email_input_lable {
   top: 50%;
   transition: top 0.25s ease-out;
- 
 }
-
 
 #password_input:focus + #password_input_lable {
   top: 0;
   background-color: #000000;
-   color:white;
-   padding-left:6px;
-   padding-right:6px;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#icon_eye {
+  display: none;
+}
+
+#password_input:focus + #icon_eye {
+  display: block;
 }
 
 #password_input_lable {
   top: 50%;
   transition: top 0.25s ease-out;
- 
+}
+
+#email_input:not(:placeholder-shown) + #email_input_lable {
+  top: 0;
+  background-color: #000000;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+  transition: top 0.25s ease-out;
+}
+#password_input:not(:placeholder-shown) + #password_input_lable {
+  top: 0;
+  transition: top 0.25s ease-out;
+  background-color: #000000;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
 }

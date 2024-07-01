@@ -388,14 +388,14 @@ function getValue() {
   xhr.send(JSON.stringify({ input_value: inputValue }));
 }
 
-function showContent(id) {
-  var contents = document.querySelectorAll(".content");
-  var fixedDiv = document.getElementById("fixedDiv");
-  contents.forEach((content) => content.classList.remove("active"));
+// function showContent(id) {
+//   var contents = document.querySelectorAll(".content");
+//   var fixedDiv = document.getElementById("fixedDiv");
+//   contents.forEach((content) => content.classList.remove("active"));
 
-  var activeContent = document.getElementById(id);
-  activeContent.classList.add("active");
-}
+//   var activeContent = document.getElementById(id);
+//   activeContent.classList.add("active");
+// }
 
 // var activeContent = document.getElementById("blogContent");
 // activeContent.classList.add("active");
@@ -574,4 +574,11 @@ function show_search() {
     show_search_menu.classList.remove("block");
     show_search_menu.classList.add("hidden");
   }
+}
+
+function showContent(id) {
+  var contents = document.querySelectorAll(".contentsP");
+  contents.forEach((content) => content.classList.remove("active"));
+  var activeContent = document.getElementById(id);
+  activeContent.classList.add("active");
 }

@@ -102,20 +102,12 @@
 				<i data-lucide="menu" class="ml-[2rem]"></i>
 			</div>
 			<div
-				class="xl:flex xl:sticky md:hidden lg:flex sm:hidden animate__animated animate__fadeILeft top-[0.5rem] flex-col mx-[1rem]"
+				class="xl:flex xl:sticky md:hidden lg:flex sm:hidden animate__animated animate__fadeILeft top-[0rem] flex-col mx-[0rem]"
 				style="z-index: 5;">
-				<div
-					class="border-l border-t w-4 h-4 absolute -left-[1px] -top-[1px]">
-				</div>
-				<div
-					class="border-l border-t w-4 h-4 absolute -right-[1px] -top-[1px] rotate-90"></div>
-				<div
-					class="border-l border-t w-4 h-4 absolute -left-[1px] -bottom-[1px] -rotate-90"></div>
-				<div
-					class="border-l border-t w-4 h-4 absolute -right-[1px] -bottom-[1px] rotate-180"></div>
+
 				<div
 					class="sticky w-full top-[0rem] py-[1.1rem] header_main_up_nv_r_four header_nh_child_class header_transparent_nr4b px-[2rem]"
-					id="nav_gj_gsl_nve_rt" style="border-top: 1px solid #2c2b2b;">
+					id="nav_gj_gsl_nve_rt" style="border-top: 1px solid #000000;">
 					<div
 						class="text-white text-sm flex flex-wrap justify-between items-center gap-[4rem]">
 						<div class="flex gap-[4rem] items-center">
@@ -169,29 +161,41 @@
 									<a href="./contact/"
 										class="a__hover font-medium relative hover:text-white select-none"
 										data-view="contact">
-										<p>Contact</p>
+										<p>Enterprise</p>
 									</a>
 								</div>
 							</div>
 						</div>
-						<div class="flex items-center gap-[1rem]">
+						<div class="flex items-center gap-[0.8rem]">
 							<button
-								class="py-1 px-4 rounded-full cursor-pointer select-none transition-all duration-300">
+								class="py-1 rounded-full cursor-pointer select-none transition-all duration-300">
 								<a href="./login/">
 									<div
-										class="a__hover text-[#a1a1a1] hover:text-white text-[16px] rounded-full px-4"
+										class="a__hover text-[#a1a1a1] hover:text-white text-[16px] rounded-full "
 										style="font-family: Geist-Regular;">
-										<p class>Sign In</p>
+										<p class="text-sm">Login</p>
+									</div>
+								</a>
+							</button>
+							<button
+								style="border:1px solid hsla(0,0%,100%,.14)"
+								class="py-1 px-1 rounded-md bg-black hover:bg-[#181818] cursor-pointer select-none transition-all duration-300">
+								<a href="./login/">
+									<div
+										class="a__hover text-[#ffffff] hover:text-white text-[16px] rounded-full px-4"
+										style="font-family: Geist-Regular;">
+										<p class="text-sm">Contact</p>
 									</div>
 								</a>
 							</button>
 							<button
 								class="py-1 bg-[#ebebeb] hover:bg-[#c9c8c8] relative rounded-md transition-all duration-300 ease-out"
 								style="border: 0.5px solid #ffffff24;">
-								<a href="./downloads/">
+								<a href="./signup/" target="_blank">
 									<div
 										class="a__hover text-black font-medium flex items-center gap-3 rounded-md px-[1rem] cursor-pointer select-none transition-all duration-300">
-										<p>Get Started</p>
+										<p class="font-medium"
+											style="font-family: Geist-Medium,sans-serif;">Sign Up</p>
 									</div>
 								</a>
 							</button>
@@ -232,7 +236,8 @@
 									onclick="showContent('loginContent')"
 									id="hover_button_home_1">
 									<button
-										class="text-black ">Get a Quote
+										class="text-black " style="font-family: Geist-Medium,sans-serif;">Get
+										a Quote
 									</button>
 									<i id="icon_home_1" class="text-black" data-lucide="chevron-right"></i>
 								</div>
