@@ -403,3 +403,14 @@ input[type="radio"]:checked + label {
 input[type="radio"] {
   display: none;
 }
+
+.width_sidebar_chat {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.25s ease-out;
+}
+.width_sidebar_chat.active {
+  width: 420px;
+  border-right: 1px solid #202020;
+  transition: width 0.25s ease-out;
+}

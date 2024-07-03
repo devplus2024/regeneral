@@ -582,3 +582,12 @@ function showContent(id) {
   var activeContent = document.getElementById(id);
   activeContent.classList.add("active");
 }
+
+function show_sidebar_chatbox() {
+  var side_bar = document.getElementById("side_bar");
+  if (side_bar.classList.contains("active")) {
+    side_bar.classList.remove("active");
+  } else {
+    side_bar.classList.add("active");
+  }
+}
