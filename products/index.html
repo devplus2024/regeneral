@@ -659,7 +659,28 @@
                                     <label for="ai" class="cursor-pointer">AI
                                         App</label>
                                 </div>
-
+                                <div>
+                                    <input type="radio" id="calculator"
+                                        name="tab"
+                                        onclick="showContent('calculatorContent')">
+                                    <label for="calculator"
+                                        class="cursor-pointer">Calculator
+                                        App</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="camera" name="tab"
+                                        onclick="showContent('cameraContent')">
+                                    <label for="camera"
+                                        class="cursor-pointer">Camera
+                                        App</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="browser" name="tab"
+                                        onclick="showContent('browserContent')">
+                                    <label for="browser"
+                                        class="cursor-pointer">Browser
+                                        App</label>
+                                </div>
                             </div>
                             <div class>
                                 <div class="contentsP active"
@@ -915,6 +936,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="contentsP" id="calculatorContent">
+                                    <div class="flex justify-center mt-[6rem]">
+                                        <div
+                                            class="h-[680px] relative w-[1300px] flex flex-col rounded-lg border border-[#202020]">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentsP" id="cameraContent">
+                                    <div class="flex justify-center mt-[6rem]">
+                                        <div
+                                            class="h-[680px] relative w-[1300px] flex flex-col rounded-lg border border-[#202020]">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentsP" id="browserContent">
+                                    <div class="flex justify-center mt-[6rem]">
+                                        <div
+                                            class="h-[680px] relative w-[1300px] flex flex-col rounded-lg border border-[#202020]">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mb-[6rem] flex justify-center">
                                 <div
@@ -1081,9 +1123,14 @@
                 src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
             <script>
             lucide.createIcons();
-            const textarea = document.getElementById('message');
+             const textarea = document.getElementById('message');
         const defaultHeight = 40;
         const maxHeight = 222;
+		const isCursorAtFirstLine = () => {
+    const cursorPosition = textarea.selectionStart;
+    const textBeforeCursor = textarea.value.slice(0, cursorPosition);
+    return textBeforeCursor.indexOf('\n') === -1;
+};
 
         const adjustHeight = () => {
             textarea.style.height = 'auto';
@@ -1112,13 +1159,23 @@
                 }, 0);
             } else if (event.key === 'Backspace') {
                 setTimeout(() => {
-                    if (textarea.selectionStart === 0 && textarea.selectionEnd === 0) {
-                        textarea.style.height = `${defaultHeight}px`;
-                        textarea.placeholder = "Send a message";
-                        textarea.style.overflow = 'hidden';
-                    } else {
-                        adjustHeight();
-                    }
+                    // Xóa các dòng thừa
+                    textarea.addEventListener('input', () => {
+						if (isCursorAtFirstLine()) {
+							console.log("Cursor is at the first line (input event).");
+							adjustHeight();
+						}
+					});
+
+					textarea.addEventListener('mouseup', () => {
+						if (isCursorAtFirstLine()) {
+							console.log("Cursor is at the first line (mouseup event).");
+							adjustHeight();
+						}
+					});
+					
+
+                    textarea.style.height = `${textarea.scrollHeight - increment}px`;
                 }, 0);
             }
         });
